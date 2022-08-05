@@ -7,7 +7,7 @@ export class CityController {
     // this.cityService.getCityFromGouv();
   }
 
-  @Get('/search')
+  @Get('/')
   async getAllEmployees(@Res() response, @Query('search') search) {
     const cities = await this.cityService.getFilteredCities(search);
     return response.status(HttpStatus.OK).json({

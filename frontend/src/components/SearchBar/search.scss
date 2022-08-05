@@ -1,0 +1,38 @@
+.search {
+  position: absolute;
+  display: flex;
+  height: 80px;
+  left: 30px;
+  top: 30px;
+  right: 30px;
+  background: #D2E5E9;
+  border-radius: 10px;
+
+  .search__title {
+    position: relative;
+    width: 356px;
+    left: 35px;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+  }
+  .search__input {
+    position: absolute;
+    font-size: 30px;
+    height:61px;
+    left: 319px;
+    top: 10px;
+    right: 10px;
+    background: #F0FCFF;
+    border-radius: 10px;
+    &::placeholder {
+      position: absolute;
+      height: 61px;
+      left: 28px;
+      top: 10px;
+      font-size: 30px;
+      line-height: 37px;
+      color: #DCDCDC;
+    }
+  }  
+}

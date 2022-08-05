@@ -1,0 +1,25 @@
+.app {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  background: #F3FDFF;
+  z-index: 1;
+
+  .overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(22, 28, 41, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}

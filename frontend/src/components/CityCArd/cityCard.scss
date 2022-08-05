@@ -1,0 +1,23 @@
+.city {
+  height: 60px;
+  width: 286px;
+  margin-bottom: 25px;
+  background: rgba(22, 28, 41, 0.63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .city__name {
+    margin-left: 14px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  .city__code {
+    margin-right: 14px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8C8F9A;
+  }
+}
