@@ -25,6 +25,10 @@ Depuis la racine du projet:
 `cd frontend`  
 `npm install` ou `yarn install` pour installer les dépendances du projet.  
 `npm run start` ou `yarn start`pour demarrer le serveur local de l'api sur http://localhost:3000  
+  
+ L'application frontend est déployée ici: https://villes-de-france-frontend.herokuapp.com/
+  
+ 
 
 
 
