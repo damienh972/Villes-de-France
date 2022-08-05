@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const getCities = async(req:string | undefined) => {
-  const url = `http://localhost:8080/cities?search=${req}`
+  const url = `https://villes-de-france-backend.herokuapp.com/cities?search=${req}`;
   let result;
   try {
     await axios
