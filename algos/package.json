@@ -1,0 +1,16 @@
+{
+  "name": "tests_algos",
+  "version": "1.0.0",
+  "description": "graneet algorithms tests",
+  "main": "index.js",
+  "scripts": {
+    "test_1":"jest tests/exo_1.test.js",
+    "test_2": "jest tests/exo_2.test.js",
+    "test_3": "jest tests/exo_3.test.js"
+  },
+  "author": "damien heloise",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}
