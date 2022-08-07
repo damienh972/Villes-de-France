@@ -17,7 +17,7 @@ const SearchBar: React.FC<Props> = ({ setCities, setOverlay }: Props) => {
     const cities = await getCities(e.target.value);
     setCities(cities.cities);
     setOverlay(false);
-     inputRef!.current!.focus();
+    inputRef!.current!.focus();
   };
 
   return (

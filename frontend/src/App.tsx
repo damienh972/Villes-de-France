@@ -1,26 +1,21 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Results from "./components/Results";
 import SearchBar from "./components/SearchBar";
 import { Cities, City } from "./models";
 import { Watch } from "react-loader-spinner";
-
 import "./styles/app.scss";
 
 const App: React.FC = () => {
   const [cities, setCities] = useState<Cities | never[]>([]);
   const [overlay, setOverlay] = useState<boolean>(false);
-  useEffect(() => {
-
-   
-  }, [cities]);
   let metropolis: Cities | never[] = [];
   let domTom: Cities | never[] = [];
  
-  console.log(cities!.length);
-   if (cities!.length > 0) {
-     metropolis = cities!.filter((city: City) => city.isMetropolitan);
-     domTom = cities!.filter((city: City) => !city.isMetropolitan);
-   }
+  if (cities!.length > 0) {
+    metropolis = cities!.filter((city: City) => city.isMetropolitan);
+    domTom = cities!.filter((city: City) => !city.isMetropolitan);
+  }
+  
   return (
     <div className="app">
       <SearchBar setOverlay={setOverlay} setCities={setCities} />
